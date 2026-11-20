@@ -1745,3 +1745,19 @@ main {
     }
 
 }
+/* REPRODUTORES YOUTUBE - e_EBD */
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+}
+
+.video-player iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
