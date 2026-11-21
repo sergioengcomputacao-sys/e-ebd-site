@@ -1761,3 +1761,59 @@ main {
     height: 100%;
     border: none;
 }
+
+/* BLACK FRIDAY - e_EBD */
+
+.black-friday-oferta {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.black-friday-faixa {
+    display: inline-block;
+    background: #d71920;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 18px rgba(215, 25, 32, 0.3);
+}
+
+.black-friday-seta {
+    color: #d71920;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.preco-antigo {
+    font-size: 20px;
+    color: #666666;
+    margin: 18px 0 5px;
+}
+
+.preco-antigo del {
+    color: #d71920;
+    font-weight: bold;
+}
+
+.black-friday-desconto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #d71920;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 8px;
+}
+
+.black-friday-urgencia {
+    color: #d71920;
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 18px;
+    line-height: 1.5;
+}
