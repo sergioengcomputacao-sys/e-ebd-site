@@ -72,6 +72,7 @@ footer {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .cabecalho {
@@ -555,7 +556,7 @@ html {
 .beneficios-destaque {
     display: block;
     color: #d4af37;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 15px;
@@ -647,7 +648,6 @@ html {
 
 }
 
-
 /* SEÇÃO PRINCIPAL */
 
 .secao-galeria {
@@ -663,7 +663,7 @@ html {
 .galeria-destaque {
     display: block;
     color: #b08d22;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 15px;
@@ -983,11 +983,12 @@ html {
 .plano-beneficios {
     text-align: left;
     margin: 28px 0;
+    font-size: 15px;
 }
 
 .plano-beneficios p {
     color: #f1f4f8;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.7;
     margin-bottom: 12px;
 }
@@ -1709,7 +1710,7 @@ main {
 .versiculo-hero {
     max-width: 750px;
     margin: 0 auto 45px;
-    text-align: center;
+    text-align: justify;
 }
 
 .versiculo-hero p {
@@ -1775,10 +1776,11 @@ main {
     color: #ffffff;
     padding: 12px 28px;
     border-radius: 8px;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 900;
     letter-spacing: 2px;
     box-shadow: 0 5px 18px rgba(215, 25, 32, 0.3);
+    white-space: nowrap;
 }
 
 .black-friday-seta {
@@ -1816,4 +1818,169 @@ main {
     font-weight: 900;
     margin-top: 18px;
     line-height: 1.5;
+}
+
+/* CORREÇÃO DO CABEÇALHO PARA NOTEBOOKS */
+
+@media (min-width: 901px) and (max-width: 1400px) {
+
+    .cabecalho-conteudo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .botoes-cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* REDES SOCIAIS - RODAPÉ PROFISSIONAL */
+
+.rodape-redes {
+    padding: 55px 20px;
+    text-align: center;
+    border-top: 1px solid #36516a;
+}
+
+.rodape-redes h3 {
+    color: #d4af37;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.rodape-redes p {
+    color: #dce6f0;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* CARTÕES MAIS SEPARADOS */
+
+.redes-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* CARTÃO INDIVIDUAL */
+
+.redes-links .rede-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    width: 280px;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 22px;
+
+    background-color: #173f63;
+    border: 1px solid #36516a;
+    border-radius: 16px;
+
+    text-decoration: none;
+    text-align: left;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.redes-links .rede-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* ÍCONES */
+
+.rede-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.rede-icone svg {
+    width: 14px;
+    height: 24px;
+    color: white;
+}
+
+.instagram-icone {
+    background: linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+.youtube-icone {
+    background-color: #ff0000;
+}
+
+/* NOME E ENDEREÇO */
+
+.rede-texto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 5px;
+}
+
+.rede-texto strong {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.rede-texto small {
+    color: #dce6f0;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .rodape-redes {
+        padding: 40px 10px;
+    }
+
+    .rodape-redes h3 {
+        font-size: 22px;
+    }
+
+    .redes-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .redes-links .rede-card {
+        width: 100%;
+        max-width: 240px;
+        padding: 10px;
+    }
 }
