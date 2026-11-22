@@ -153,72 +153,94 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
+<!-- CAPA EXCLUSIVA PARA CELULARES -->
+<section class="capa-mobile">
+
+    <div class="capa-mobile-conteudo">
+
+        <h2>
+            Em 2027, sua EBD mais organizada!
+            
+        </h2>
+
+        <img
+            src="imagens/menino-celular.png"
+            alt="Menino segurando celular com o aplicativo e_EBD"
+        >
+
+        <a href="#beneficios" class="capa-mobile-botao">
+            Conheça o e_EBD
+        </a>
+
+    </div>
+
+</section>
+
+
         
+
 <!-- SEÇÃO PRINCIPAL DE VENDAS -->
 <section id="inicio" class="hero">
 
     <div class="container hero-conteudo">
 
-        <!-- TEXTO COMERCIAL -->
+        <!-- COLUNA ESQUERDA: TEXTO -->
         <div class="hero-texto">
 
-            <div class="versiculo-hero">
+
+<!-- VERSÍCULO BÍBLICO -->
+<div class="versiculo-hero">
     <p>
         “Servi uns aos outros, cada um conforme o dom
         que recebeu, como bons despenseiros da
-        multiforme graça de Deus.” <span>1 Pedro 4:10</span>
+        multiforme graça de Deus.”
+        <span>1 Pedro 4:10</span>
     </p>
-
-   
 </div>
 
-            <span class="hero-destaque">
-                TECNOLOGIA PARA SUA ESCOLA BÍBLICA DOMINICAL
-            </span>
+<!-- DESTAQUE -->
+<span class="hero-destaque">
+    TECNOLOGIA PARA SUA ESCOLA BÍBLICA DOMINICAL
+</span>
 
-            <h2>
-                Em 2027, deixe sua EBD mais organizada, moderna
-                e digital.
-            </h2>
+<!-- APRESENTAÇÃO -->
+<p>
+    Conheça o e_EBD, o aplicativo que facilita
+    a gestão de professores, classes, alunos,
+    chamadas, diários dominicais e relatórios.
+</p>
 
-            <p>
-                Conheça o e_EBD, o aplicativo que
-                facilita a gestão de professores,
-                classes, alunos, chamadas,
-                diários dominicais e relatórios.
-            </p>
+<!-- BOTÕES -->
+<div class="hero-botoes">
 
-            <div class="hero-botoes">
+    <a href="#funcionalidades" class="hero-botao-principal">
+        Conhecer funcionalidades
+    </a>
 
-                <a href="#funcionalidades"
-                   class="hero-botao-principal">
-                    Conhecer funcionalidades
-                </a>
+    <a href="#videos" class="hero-botao-secundario">
+        ▶ Assistir demonstração
+    </a>
 
-                <a href="#videos"
-                   class="hero-botao-secundario">
-                    ▶ Assistir demonstração
-                </a>
+</div>
 
-            </div>
+<!-- INFORMAÇÃO DA ASSINATURA -->
+<p class="hero-informacao">
+    ✓ Uma assinatura para toda a igreja
+</p>
+           
 
-            <p class="hero-informacao">
-                ✓ Uma assinatura para toda a igreja
-            </p>
+        </div> <!-- FECHA hero-texto -->
 
-        </div>
-
-        <!-- IMAGEM DO APLICATIVO -->
+        <!-- COLUNA DIREITA: MENINO -->
         <div class="hero-imagem">
-
             <img
-                src="imagens/app-ebd.png"
-                alt="Apresentação do aplicativo e_EBD"
+                src="imagens/menino-celular.png"
+                alt="Menino segurando celular com o aplicativo e_EBD"
+                loading="eager"
             >
+        </div> <!-- FECHA hero-imagem -->
 
-        </div>
-
-    </div>
+    </div> <!-- FECHA hero-conteudo -->
 
 </section>
 
@@ -476,13 +498,6 @@
                 <figcaption>Configurações</figcaption>
             </figure>
 
-            <figure class="galeria-item">
-                <img
-                    src="imagens/app-ebd.png"
-                    alt="Apresentação do e_EBD"
-                    class="imagem-galeria">
-                <figcaption>Conheça o e_EBD</figcaption>
-            </figure>
 
         </div>
 
@@ -711,6 +726,7 @@
         </div>
 
         <div class="faq-lista">
+            
 
             <details class="faq-item">
                 <summary>
@@ -792,6 +808,16 @@
                     e relatórios da igreja.
                 </p>
             </details>
+            <details class="faq-item">
+                <summary>Qual é a stack tecnológica do e_EBD?</summary>
+                <p>
+                O e_EBD utiliza Kotlin com Jetpack Compose no
+                aplicativo Android, Python com FastAPI no backend
+                e PostgreSQL como banco de dados.
+                A comunicação ocorre por meio de uma API REST.
+            </p>
+            </details>            
+            
 
         </div>
 
