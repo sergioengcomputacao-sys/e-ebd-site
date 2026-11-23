@@ -1,1078 +1,2212 @@
 
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 36px;
+}
+
+/* CONTEÚDO */
+
+section {
+     margin-bottom: 25px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+
+section a {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ====================================
+   AULA 2 - CABEÇALHO PROFISSIONAL
+==================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cabecalho {
+    background-color: #102a43;
+    padding: 20px 0;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo h1 {
+    color: #d4af37;
+    font-size: 32px;
+}
+
+.logo span {
+    color: white;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #d4af37;
+}
+
+.botao-cabecalho {
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.botao-cabecalho:hover {
+    background-color: #f1c94b;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 900px) {
+
+    .cabecalho-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+
+/* ====================================
+   AULA 3 - FORMULÁRIO E CONTATO
+==================================== */
+
+.secao-contato {
+    background-color: #f5f7fb;
+    padding: 70px 20px;
+}
+
+.formulario {
+    background-color: white;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: left;
+}
+
+.formulario label {
+    color: #102a43;
+    font-weight: bold;
+}
+
+.formulario input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario input:focus {
+    outline: 2px solid #d4af37;
+    border-color: #d4af37;
+}
+
+.aceite-privacidade {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: normal !important;
+    margin: 12px 0;
+}
+
+.aceite-privacidade input {
+    margin-top: 3px;
+}
+
+.botao-enviar {
+    background-color: #d4af37;
+    color: #102a43;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #f1c94b;
+}
+
+.contato-whatsapp {
+    margin-top: 35px;
+}
+
+.contato-whatsapp h3 {
+    margin-bottom: 20px;
+}
+
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1da851;
+}
+
+#mensagem-formulario {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* BOTÕES DO CABEÇALHO */
+
+.botoes-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.botao-whatsapp-topo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #25d366;
+    color: #ffffff;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+
+    transition: background-color 0.3s;
+}
+
+.botao-whatsapp-topo:hover {
+    background-color: #1da851;
+}
+
+@media (max-width: 600px) {
+
+    .botoes-cabecalho {
+        flex-wrap: wrap;
+    }
+
+    .botao-whatsapp-topo,
+    .botao-cabecalho {
+        text-align: center;
+    }
+
+}
+
+/* ====================================
+   FUNCIONALIDADES DO e_EBD
+==================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.secao-funcionalidades {
+    background-color: #ffffff;
+    padding: 90px 20px;
+    scroll-margin-top: 20px;
+}
+
+.secao-funcionalidades h2 {
+    color: #102a43;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.descricao-funcionalidades {
+    color: #526477;
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.cards-funcionalidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-funcionalidade {
+    background-color: #f5f7fb;
+    border: 1px solid #e1e7ee;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-funcionalidade:hover {
+    transform: translateY(-5px);
+}
+
+.icone-funcionalidade {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-funcionalidade h3 {
+    color: #102a43;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card-funcionalidade p {
+    color: #526477;
+    font-size: 15px;
+}
+
+.acao-funcionalidades {
+    margin-top: 40px;
+}
+
+.botao-conhecer {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-conhecer:hover {
+    background-color: #f1c94b;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .cards-funcionalidades {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-funcionalidades h2 {
+        font-size: 27px;
+    }
+
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #173f63
+    );
+
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+.hero-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-texto {
+    text-align: left;
+}
+
+.hero-destaque {
+    display: inline-block;
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero-texto h2 {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-texto p {
+    color: #dce6f0;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.hero-botao-principal,
+.hero-botao-secundario {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-botao-principal {
+    background-color: #d4af37;
+    color: #102a43;
+}
+
+.hero-botao-principal:hover {
+    background-color: #f1c94b;
+}
+
+.hero-botao-secundario {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #d4af37;
+}
+
+.hero-botao-secundario:hover {
+    background-color: #d4af37;
+    color: #102a43;
+}
+
+.hero-texto .hero-informacao {
+    font-size: 14px;
+    color: #d4af37;
+}
+
+.hero-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-imagem img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    object-fit: contain;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero-conteudo {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero-texto {
+        text-align: center;
+    }
+
+    .hero-texto h2 {
+        font-size: 32px;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-texto h2 {
+        font-size: 27px;
+    }
+
+    .hero-botao-principal,
+    .hero-botao-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.secao-beneficios {
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #173f63
+    );
+
+    padding: 90px 20px;
+    scroll-margin-top: 20px;
+}
+
+.beneficios-cabecalho {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+.beneficios-destaque {
+    display: block;
+    color: #d4af37;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.beneficios-cabecalho h2 {
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.beneficios-cabecalho p {
+    color: #dce6f0;
+    font-size: 17px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficio-card {
+    background-color: #173f63;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.beneficio-icone {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.beneficio-card h3 {
+    color: #d4af37;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.beneficio-card p {
+    color: #dce6f0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .secao-beneficios {
+        padding: 65px 20px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-cabecalho h2 {
+        font-size: 27px;
+    }
+
+    .beneficio-card {
+        padding: 30px 20px;
+    }
+
+}
+
+/* SEÇÃO PRINCIPAL */
+
+.secao-galeria {
+    background-color: #f5f7fb;
+    padding: 90px 20px;
+}
+
+.galeria-cabecalho {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.galeria-destaque {
+    display: block;
+    color: #b08d22;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.galeria-cabecalho h2 {
+    color: #102a43;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.galeria-cabecalho p {
+    color: #526477;
+}
+
+/* ORGANIZAÇÃO DAS IMAGENS */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-galeria {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #eef2f6;
+}
+
+.galeria-item figcaption {
+    color: #102a43;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* VISUALIZADOR DE IMAGENS */
+
+.visualizador {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+.visualizador[hidden] {
+    display: none;
+}
+
+.visualizador img {
+    max-width: 95%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.fechar-visualizador {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+
+    background: transparent;
+    border: none;
+    color: #ffffff;
+
+    font-size: 42px;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+
+@media (max-width: 1000px) {
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-galeria {
+        height: 350px;
+    }
+
+    .galeria-cabecalho h2 {
+        font-size: 27px;
+    }
+
+}
+
+.secao-videos {
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #173f63
+    );
+
+    padding: 90px 20px;
+    scroll-margin-top: 20px;
+}
+
+.videos-cabecalho {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.videos-destaque {
+    display: block;
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.videos-cabecalho h2 {
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.videos-cabecalho p {
+    color: #dce6f0;
+    font-size: 17px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #071b2d;
+}
+
+.video-player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-informacoes {
+    padding: 28px;
+    text-align: left;
+}
+
+.video-etiqueta {
+    display: inline-block;
+    color: #b08d22;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.video-informacoes h3 {
+    color: #102a43;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.video-informacoes p {
+    color: #526477;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .videos-cabecalho h2 {
+        font-size: 27px;
+    }
+
+    .video-informacoes {
+        padding: 22px;
+    }
+
+}
+
+/* REPRODUÇÃO DOS VÍDEOS LOCAIS */
+
+.video-player video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #071b2d;
+    border: none;
+}
+
+
+.secao-planos {
+    padding: 90px 20px;
+    background: #f4f7fb;
+}
+
+.planos-cabecalho {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.planos-destaque {
+    color: #b88932;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.planos-cabecalho h2 {
+    color: #071b2d;
+    font-size: clamp(26px, 4vw, 36px);
+    margin: 15px 0;
+}
+
+.planos-cabecalho p {
+    color: #566574;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.plano-card {
+    background: #071b2d;
+    color: white;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 45px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.plano-etiqueta {
+    display: inline-block;
+    background: #d9a441;
+    color: #071b2d;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.plano-card h3 {
+    font-size: 26px;
+    margin: 22px 0;
+    color: white;
+}
+
+.plano-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 28px;
+}
+
+.plano-preco strong {
+    font-size: clamp(36px, 6vw, 48px);
+    color: #e8be6b;
+}
+
+.plano-preco span {
+    font-size: 15px;
+    color: #d5dce4;
+}
+
+.plano-beneficios {
+    text-align: left;
+    margin: 28px 0;
+    font-size: 15px;
+}
+
+.plano-beneficios p {
+    color: #f1f4f8;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.plano-botao {
+    display: block;
+    background: #d9a441;
+    color: #071b2d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.plano-botao:hover {
+    background: #e8be6b;
+    transform: translateY(-2px);
+}
+
+.plano-observacao {
+    color: #d5dce4;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .secao-planos {
+        padding: 60px 16px;
+    }
+
+    .plano-card {
+        padding: 32px 22px;
+    }
+
+    .plano-card h3 {
+        font-size: 23px;
+    }
+}
+
+.secao-faq {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.faq-cabecalho {
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
+.faq-destaque {
+    display: block;
+    color: #b88932;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.faq-cabecalho h2 {
+    color: #102a43;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.faq-cabecalho p {
+    color: #526477;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.faq-lista {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #f5f7fb;
+    border: 1px solid #e1e7ee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 24px;
+    color: #102a43;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    text-align: left;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    color: #b88932;
+    font-size: 26px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item[open] {
+    background-color: #ffffff;
+    border-color: #d4af37;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.secao-faq .faq-item p {
+    color: #526477;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    padding: 0 24px 22px;
+    margin: 0;
+}
+
+.faq-rodape {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.faq-rodape p {
+    color: #102a43;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.secao-faq .faq-botao {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 14px 30px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.secao-faq .faq-botao:hover {
+    background-color: #f1c94b;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .secao-faq {
+        padding: 60px 16px;
+    }
+
+    .faq-cabecalho h2 {
+        font-size: 27px;
+    }
+
+    .faq-item summary {
+        padding: 18px;
+        font-size: 15px;
+    }
+
+    .secao-faq .faq-item p {
+        padding: 0 18px 18px;
+        font-size: 14px;
+    }
+
+}
+
+.secao-download {
+    padding: 85px 20px;
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #173f63
+    );
+    text-align: center;
+}
+
+.download-conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.download-destaque {
+    display: block;
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+
+.download-conteudo h2 {
+    color: #ffffff;
+    font-size: clamp(27px, 4vw, 38px);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.download-conteudo > p {
+    color: #dce6f0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.download-acoes {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 18px;
+}
+
+.download-em-breve {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.download-conteudo .download-observacao {
+    color: #c9d6e3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    .secao-download {
+        padding: 60px 16px;
+    }
+
+    .download-conteudo h2 {
+        font-size: 27px;
+    }
+
+    .download-conteudo > p {
+        font-size: 15px;
+    }
+
+}
+
+.pagina-legal-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pagina-legal-topo h1 {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+.pagina-legal-topo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.pagina-legal-topo a:hover {
+    color: #d4af37;
+}
+
+.pagina-legal {
+    padding: 65px 20px;
+    background-color: #f5f7fb;
+}
+
+.legal-conteudo {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    text-align: left;
+}
+
+.legal-conteudo h2 {
+    color: #102a43;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.legal-conteudo h3 {
+    color: #102a43;
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.legal-conteudo p {
+    color: #526477;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.legal-conteudo .legal-introducao {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+
+    .pagina-legal-topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagina-legal {
+        padding: 35px 15px;
+    }
+
+    .legal-conteudo {
+        padding: 28px 20px;
+    }
+
+    .legal-conteudo h2 {
+        font-size: 27px;
+    }
+
+    .legal-conteudo h3 {
+        font-size: 18px;
+    }
+
+    .legal-conteudo p {
+        font-size: 15px;
+    }
+
+}
+
+main {
+    background-color: #102a43;
+}
+
+
+.rodape-site {
+    background-color: #102a43;
+    color: #ffffff;
+    padding: 65px 20px 25px;
+}
+
+.rodape-conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 45px;
+    text-align: left;
+    padding-bottom: 45px;
+}
+
+.rodape-marca h2 {
+    color: #d4af37;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.rodape-marca p {
+    color: #dce6f0;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.rodape-links h3 {
+    color: #d4af37;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.rodape-links a {
+    color: #dce6f0;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rodape-links a:hover {
+    color: #d4af37;
+}
+
+.rodape-inferior {
+    border-top: 1px solid #36516a;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.rodape-inferior p {
+    color: #dce6f0;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .rodape-conteudo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rodape-site {
+        padding: 45px 20px 20px;
+    }
+
+}
+
+
+/* Esconde o botão hambúrguer no computador */
+.botao-menu-mobile {
+    display: none;
+}
+
+/* Configuração para celulares */
+@media (max-width: 600px) {
+
+    .cabecalho {
+        padding: 15px 0;
+    }
+
+    .cabecalho-conteudo {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo span {
+        font-size: 10px;
+    }
+
+    /* Botão hambúrguer */
+    .botao-menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 46px;
+        height: 46px;
+
+        background: transparent;
+        border: 1px solid #d4af37;
+        border-radius: 8px;
+
+        color: #ffffff;
+        font-size: 27px;
+        cursor: pointer;
+    }
+
+    /* Menu fechado inicialmente */
+    .cabecalho .menu {
+        display: none;
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid #36516a;
+    }
+
+    /* Menu aberto */
+    .cabecalho .menu.menu-aberto {
+        display: flex;
+    }
+
+    .cabecalho .menu a {
+        display: block;
+        padding: 12px 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .cabecalho .menu a:hover {
+        background-color: #173f63;
+    }
+
+    /* Botões comerciais */
+    .botoes-cabecalho {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botao-cabecalho,
+    .botao-whatsapp-topo {
+        padding: 11px 14px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 600px) {
+
+    /* Botões da apresentação principal */
+    .hero-botao-principal,
+    .hero-botao-secundario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 16px;
+
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    /* Espaçamento entre os botões principais */
+    .hero-botoes {
+        gap: 12px;
+    }
+
+    /* Botões comerciais do cabeçalho */
+    .cabecalho .botao-cabecalho,
+    .cabecalho .botao-whatsapp-topo {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 44px;
+        padding: 10px 12px;
+
+        font-size: 13px;
+        line-height: 1.3;
+        border-radius: 9px;
+        text-align: center;
+    }
+
+    /* Botões das demais seções */
+    .botao-conhecer,
+    .plano-botao,
+    .secao-faq .faq-botao,
+    .botao-enviar,
+    .botao-whatsapp {
+        min-height: 48px;
+        padding: 12px 18px;
+
+        font-size: 14px;
+        line-height: 1.4;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* Evita que botões largos ultrapassem a tela */
+    .botao-conhecer,
+    .secao-faq .faq-botao,
+    .botao-whatsapp {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Espaçamento lateral do cabeçalho */
+    .cabecalho .cabecalho-conteudo {
+        width: calc(100% - 40px);
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Espaçamento interno da apresentação */
+    .hero {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    /* Limita a largura do conteúdo principal */
+    .hero .hero-conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Mantém os botões dentro da área disponível */
+    .hero-botoes {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+
+    /* Espaçamento da seção */
+    .secao-beneficios {
+        padding: 55px 20px;
+    }
+
+    /* Espaçamento entre os cartões */
+    .beneficios-grid {
+        gap: 16px;
+    }
+
+    /* Cartões mais compactos */
+    .beneficio-card {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    /* Ícones proporcionais */
+    .beneficio-icone {
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+
+    /* Títulos dos cartões */
+    .beneficio-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Descrições */
+    .beneficio-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    /* Título da seção */
+    .beneficios-cabecalho {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Espaçamento da seção */
+    .secao-galeria {
+        padding: 55px 20px;
+    }
+
+    /* Organização das imagens */
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Cartões das imagens */
+    .galeria-item {
+        padding: 18px;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    /* Capturas de tela */
+    .imagem-galeria {
+        display: block;
+        width: 100%;
+        height: 380px;
+        object-fit: contain;
+        object-position: center;
+
+        background-color: #eef2f6;
+        border-radius: 10px;
+    }
+
+    /* Legendas */
+    .galeria-item figcaption {
+        font-size: 15px;
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    /* Título da seção */
+    .galeria-cabecalho {
+        margin-bottom: 30px;
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 360px) {
+
+    .imagem-galeria {
+        height: 320px;
+    }
+}
+/* VERSÍCULO BÍBLICO - HERO */
+
+.versiculo-hero {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: justify;
+}
+
+.versiculo-hero p {
+    color: #ffffff;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.versiculo-hero span {
+    color: #d4af37;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* VERSÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .versiculo-hero {
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .versiculo-hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .versiculo-hero span {
+        font-size: 14px;
+    }
+
+}
+/* REPRODUTORES YOUTUBE - e_EBD */
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+}
+
+.video-player iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* BLACK FRIDAY - e_EBD */
+
+.black-friday-oferta {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.black-friday-faixa {
+    display: inline-block;
+    background: #d71920;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 18px rgba(215, 25, 32, 0.3);
+    white-space: nowrap;
+}
+
+.black-friday-seta {
+    color: #d71920;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.preco-antigo {
+    font-size: 20px;
+    color: #666666;
+    margin: 18px 0 5px;
+}
+
+.preco-antigo del {
+    color: #d71920;
+    font-weight: bold;
+}
+
+.black-friday-desconto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #d71920;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 8px;
+}
+
+.black-friday-urgencia {
+    color: #d71920;
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+/* CORREÇÃO DO CABEÇALHO PARA NOTEBOOKS */
+
+@media (min-width: 901px) and (max-width: 1400px) {
+
+    .cabecalho-conteudo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .botoes-cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* REDES SOCIAIS - RODAPÉ PROFISSIONAL */
+
+.rodape-redes {
+    padding: 55px 20px;
+    text-align: center;
+    border-top: 1px solid #36516a;
+}
+
+.rodape-redes h3 {
+    color: #d4af37;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.rodape-redes p {
+    color: #dce6f0;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* CARTÕES MAIS SEPARADOS */
+
+.redes-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* CARTÃO INDIVIDUAL */
+
+.redes-links .rede-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    width: 280px;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 22px;
+
+    background-color: #173f63;
+    border: 1px solid #36516a;
+    border-radius: 16px;
+
+    text-decoration: none;
+    text-align: left;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.redes-links .rede-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* ÍCONES */
+
+.rede-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.rede-icone svg {
+    width: 14px;
+    height: 24px;
+    color: white;
+}
+
+.instagram-icone {
+    background: linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+.youtube-icone {
+    background-color: #ff0000;
+}
+
+/* NOME E ENDEREÇO */
+
+.rede-texto {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 5px;
+}
+
+.rede-texto strong {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.rede-texto small {
+    color: #dce6f0;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .rodape-redes {
+        padding: 40px 10px;
+    }
+
+    .rodape-redes h3 {
+        font-size: 22px;
+    }
+
+    .redes-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .redes-links .rede-card {
+        width: 100%;
+        max-width: 240px;
+        padding: 10px;
+    }
+}
+
+/* CAPA EXCLUSIVA PARA CELULARES */
+
+.capa-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .capa-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100svh - 80px);
+        padding: 35px 20px;
+        background: linear-gradient(
+            135deg,
+            #102a43,
+            #173f63
+        );
+        text-align: center;
+    }
+
+    .capa-mobile-conteudo {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .capa-mobile h2 {
+        color: #ffffff;
+        font-size: 29px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    .capa-mobile h2 span {
+        display: block;
+        color: #d4af37;
+    }
+
+    .capa-mobile img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        max-height: 48svh;
+        object-fit: contain;
+        margin: 0 auto 25px;
+    }
+
+    .capa-mobile-botao {
+        display: inline-block;
+        background: #d4af37;
+        color: #102a43;
+        padding: 14px 28px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+/* IMAGEM PRINCIPAL DO DESKTOP */
+
+@media (min-width: 601px) {
+
+    .hero-imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-imagem img {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* EVITAR IMAGEM DUPLICADA NO CELULAR */
+
+@media (max-width: 600px) {
+
+    .hero-imagem {
+        display: none;
+    }
+}
+
+/* IMAGEM DO MENINO NO DESKTOP */
+
+@media (min-width: 901px) {
+
+    .hero-conteudo {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero-imagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-imagem img {
+        display: block;
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* NO CELULAR, MANTER SOMENTE A CAPA MOBILE */
+
+@media (max-width: 600px) {
+    .hero-imagem {
+        display: none;
+    }
+}
+
+/* SEÇÃO ANTES E DEPOIS */
+
+.secao-antes-depois {
+    background: #102a43;
+    padding: 75px 20px;
+    color: #ffffff;
+}
+
+.comparativo-cabecalho {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comparativo-cabecalho span {
+    color: #d4af37;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.comparativo-cabecalho h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.comparativo-cabecalho p {
+    color: #dce5ee;
+}
+
+.comparativo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.comparativo-card {
+    background: #173f63;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    min-width: 0;
+}
+
+
+/* IMAGENS ANTES E DEPOIS - TAMANHO PADRONIZADO */
+.comparativo-card img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+    margin: 18px auto;
+}
+
+
+.comparativo-etiqueta {
+    display: inline-block;
+    padding: 9px 25px;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+.comparativo-etiqueta.antes {
+    background: #e5e7eb;
+    color: #243447;
+}
+
+.comparativo-etiqueta.depois {
+    background: #d4af37;
+    color: #102a43;
+}
+
+.comparativo-card h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.comparativo-card p {
+    color: #e4ebf2;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 600px) {
+    .secao-antes-depois {
+        padding: 50px 15px;
+    }
+
+    .comparativo-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .comparativo-card img {
+        height: auto;
+        max-height: 450px;
+        object-fit: contain;
+    }
+}
 
-<!DOCTYPE html>
-<html lang="pt-BR">
 
-<head>
-
-    <!-- Google Analytics 4 - e-EBD -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2L2GC6YXVG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-2L2GC6YXVG');
-    </script>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <!-- TÍTULO PARA MECANISMOS DE BUSCA -->
-    <title>e_EBD | Aplicativo para Escola Bíblica Dominical</title>
-
-    <!-- DESCRIÇÃO PARA O GOOGLE -->
-    <meta
-        name="description"
-        content="Conheça o e_EBD, aplicativo para gestão da Escola Bíblica Dominical. Organize professores, classes, alunos, chamadas, diários e relatórios. Uma assinatura para toda a igreja."
-    >
-
-
-    <!-- IDENTIFICAÇÃO DO SITE -->
-    <meta name="application-name" content="e_EBD">
-    <meta name="theme-color" content="#102a43">
-
-    
-<!-- COMPARTILHAMENTO EM REDES SOCIAIS -->
-<meta property="og:type" content="website">
-
-<meta property="og:title"
-      content="e_EBD | Escola Bíblica Dominical Digital">
-
-<meta property="og:description"
-      content="Modernize a gestão da sua Escola Bíblica Dominical com o e_EBD. Professores, classes, alunos, chamadas e relatórios em um só aplicativo.">
-
-<meta property="og:locale" content="pt_BR">
-
-<meta property="og:url"
-      content="https://sergioengcomputacao-sys.github.io/e-ebd-site/">
-
-<meta property="og:image"
-      content="https://sergioengcomputacao-sys.github.io/e-ebd-site/imagens/compartilhamento-ebd-1200x630.jpg">
-
-<meta property="og:image:secure_url"
-      content="https://sergioengcomputacao-sys.github.io/e-ebd-site/imagens/compartilhamento-ebd-1200x630.jpg">
-
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<meta property="og:image:alt"
-      content="e_EBD — Escola Bíblica Dominical Digital">
-
-
-
-    <!-- ÍCONE DO SITE e_EBD -->
-<link rel="icon" type="image/png" href="imagens/favicon.png">
-
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-
-<body>
-
-    <!-- CABEÇALHO -->
-    
-<!-- CABEÇALHO PROFISSIONAL -->
-<header class="cabecalho">
-
-    <div class="container cabecalho-conteudo">
-
-        <!-- LOGOTIPO -->
-        <div class="logo">
-            <h1>e_EBD</h1>
-            <span>Escola Bíblica Dominical Digital</span>
-        </div>
-
-        
-<!-- BOTÃO DO MENU PARA CELULARES -->
-<button
-    type="button"
-    class="botao-menu-mobile"
-    id="botao-menu-mobile"
-    aria-label="Abrir menu de navegação"
-    aria-controls="menu-principal"
-    aria-expanded="false"
->
-    ☰
-</button>
-
-<!-- MENU DE NAVEGAÇÃO -->
-<nav class="menu" id="menu-principal" aria-label="Menu principal">
-
-
-            <a href="#inicio">Início</a>
-
-            <a href="#beneficios">Benefícios</a>
-
-            <a href="#funcionalidades">Funcionalidades</a>
-
-            <a href="#videos">Vídeos</a>
-
-            <a href="#planos">Planos</a>
-            <a href="#download">Download</a>
-            <a href="#contato">Contato</a>
-
-        </nav>
-
-        <!-- BOTÃO COMERCIAL -->
-        
-<!-- BOTÕES DO CABEÇALHO -->
-<div class="botoes-cabecalho">
-
-    <a href="#funcionalidades" class="botao-cabecalho">
-        Conhecer o App
-    </a>
-
-    
-<!-- BOTÃO WHATSAPP DO CABEÇALHO -->
-<a
-    href="https://wa.me/5594992026460?text=Ol%C3%A1%21%20Conheci%20o%20site%20e_EBD%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20aplicativo."
-    class="botao-whatsapp-topo"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Conversar pelo WhatsApp"
->
-    💬 Fale comigo
-</a>
-
-</div>
-
-
-    </div>
-
-</header>
-
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-
-<!-- CAPA EXCLUSIVA PARA CELULARES -->
-<section class="capa-mobile">
-
-    <div class="capa-mobile-conteudo">
-
-        <h2>
-            Em 2027, sua EBD mais organizada!
-            
-        </h2>
-
-        <img
-            src="imagens/menino-celular.png"
-            alt="Menino segurando celular com o aplicativo e_EBD"
-        >
-
-        <a href="#beneficios" class="capa-mobile-botao">
-            Conheça o e_EBD
-        </a>
-
-    </div>
-
-</section>
-
-
-        
-
-<!-- SEÇÃO PRINCIPAL DE VENDAS -->
-<section id="inicio" class="hero">
-
-    <div class="container hero-conteudo">
-
-        <!-- COLUNA ESQUERDA: TEXTO -->
-        <div class="hero-texto">
-
-
-<!-- VERSÍCULO BÍBLICO -->
-<div class="versiculo-hero">
-    <p>
-        “Servi uns aos outros, cada um conforme o dom
-        que recebeu, como bons despenseiros da
-        multiforme graça de Deus.”
-        <span>1 Pedro 4:10</span>
-    </p>
-</div>
-
-<!-- DESTAQUE -->
-<span class="hero-destaque">
-    TECNOLOGIA PARA SUA ESCOLA BÍBLICA DOMINICAL
-</span>
-
-<!-- APRESENTAÇÃO -->
-<p>
-    Conheça o e_EBD, o aplicativo que facilita
-    a gestão de professores, classes, alunos,
-    chamadas, diários dominicais e relatórios.
-</p>
-
-<!-- BOTÕES -->
-<div class="hero-botoes">
-
-    <a href="#funcionalidades" class="hero-botao-principal">
-        Conhecer funcionalidades
-    </a>
-
-    <a href="#videos" class="hero-botao-secundario">
-        ▶ Assistir demonstração
-    </a>
-
-</div>
-
-<!-- INFORMAÇÃO DA ASSINATURA -->
-<p class="hero-informacao">
-    ✓ Uma assinatura para toda a igreja
-</p>
-           
-
-        </div> <!-- FECHA hero-texto -->
-
-        <!-- COLUNA DIREITA: MENINO -->
-        <div class="hero-imagem">
-            <img
-                src="imagens/menino-celular.png"
-                alt="Menino segurando celular com o aplicativo e_EBD"
-                loading="eager"
-            >
-        </div> <!-- FECHA hero-imagem -->
-
-    </div> <!-- FECHA hero-conteudo -->
-
-</section>
-
-
-<!-- COMPARATIVO ANTES E DEPOIS -->
-<section class="secao-antes-depois">
-
-    <div class="container">
-
-        <div class="comparativo-cabecalho">
-            <span>EVOLUÇÃO DA ESCOLA BÍBLICA DOMINICAL</span>
-
-            <h2>Do papel para o digital!</h2>
-
-            <p>
-                Sua Escola Bíblica Dominical merece
-                mais praticidade, organização e tecnologia.
-            </p>
-        </div>
-
-        <div class="comparativo-grid">
-
-            <!-- ANTES -->
-            <div class="comparativo-card">
-                <span class="comparativo-etiqueta antes">
-                    ANTES
-                </span>
-
-                <img
-                    src="imagens/ebd-antes.png"
-                    alt="Registro manual da Escola Bíblica Dominical"
-                    loading="lazy"
-                >
-
-                <h3>A irmã Maria do Carmos realizando a chamada
-                <p>Preenchimento manual de chamadas e relatórios.</p>
-            </div>
-
-            <!-- DEPOIS -->
-            <div class="comparativo-card">
-                <span class="comparativo-etiqueta depois">
-                    DEPOIS
-                </span>
-
-                <img
-                    src="imagens/ebd-depois.png"
-                    alt="Chamada digital no aplicativo e_EBD"
-                    loading="lazy"
-                >
-
-                <h3>A irmã Maria do Carmos, agora com o e_EBD</h3>
-                <p>Chamada pelo celular de forma prática e rápida.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="beneficios" class="secao-beneficios">
-
-    <div class="container">
-
-        <div class="beneficios-cabecalho">
-
-            <span class="beneficios-destaque">
-                POR QUE ESCOLHER O e_EBD?
-            </span>
-
-            <h2>
-                Mais organização para sua
-                Escola Bíblica
-            </h2>
-
-            <p>
-                Uma solução digital desenvolvida
-                para simplificar o trabalho de
-                superintendentes e professores.
-            </p>
-
-        </div>
-
-        <div class="beneficios-grid">
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">👥</div>
-                <h3>Gestão Centralizada</h3>
-                <p>
-                    Organize professores, classes
-                    e alunos em um único sistema.
-                </p>
-            </article>
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">✅</div>
-                <h3>Chamada Digital</h3>
-                <p>
-                    Registre presenças e ausências
-                    dos alunos diretamente pelo celular.
-                </p>
-            </article>
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">📊</div>
-                <h3>Relatórios digital e físico</h3>
-                <p>
-                    Acompanhe indicadores das classes
-                    e os resultados consolidados.
-                </p>
-            </article>
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">📱</div>
-                <h3>Praticidade no Celular</h3>
-                <p>
-                    Acesse as ferramentas do e_EBD
-                    com uma interface simples e moderna.
-                </p>
-            </article>
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">📖</div>
-                <h3>Diário de Classe Digital</h3>
-                <p>
-                    Registre visitantes, Bíblias,
-                    revistas, ofertas e frequência.
-                </p>
-            </article>
-
-            <article class="beneficio-card">
-                <div class="beneficio-icone">🔐</div>
-                <h3>Acesso Individual</h3>
-                <p>
-                    Professores e superintendentes
-                    utilizam perfis com permissões
-                    específicas.
-                </p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==================================
-     GALERIA DE IMAGENS DO e_EBD
-=================================== -->
-
-<section id="galeria" class="secao-galeria">
-
-    <div class="container">
-
-        <div class="galeria-cabecalho">
-
-            <span class="galeria-destaque">
-                CONHEÇA O SISTEMA
-            </span>
-
-    
-
-            <p>
-                Conheça as principais telas
-                do ao App da sua Igreja.
-            </p>
-
-        </div>
-
-        <div class="galeria-grid">
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/telainicial.png"
-                    alt="Tela Inicial"
-                    class="imagem-galeria">
-                <figcaption>Tela Inicial</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/telsuperintendente.png"
-                    alt="Painel do Superintendente"
-                    class="imagem-galeria">
-                <figcaption>Superintendente</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/diarios.png"
-                    alt="Diários de Classe"
-                    class="imagem-galeria">
-                <figcaption>Diário de Classe</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/relatorio domingo.png"
-                    alt="Relatório Dominical"
-                    class="imagem-galeria">
-                <figcaption>Relatório Dominical</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/relatoriogeral.png"
-                    alt="Relatório Geral"
-                    class="imagem-galeria">
-                <figcaption>Relatório Geral</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/graficos comparativos.png"
-                    alt="Gráficos Comparativos"
-                    class="imagem-galeria">
-                <figcaption>Gráficos Comparativos</figcaption>
-            </figure>
-
-            <figure class="galeria-item">
-                <img
-                    src="imagens/configuracoes.png"
-                    alt="Configurações"
-                    class="imagem-galeria">
-                <figcaption>Configurações</figcaption>
-            </figure>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- VISUALIZADOR DE IMAGENS -->
-<div id="visualizador" class="visualizador" hidden>
-
-    <button
-        id="fechar-visualizador"
-        class="fechar-visualizador"
-        type="button"
-        aria-label="Fechar imagem"
-    >
-        ×
-    </button>
-
-    <img
-        id="imagem-ampliada"
-        alt="Imagem ampliada do e_EBD"
-    >
-
-</div>
-
-
-
-<!-- SEÇÃO DE VÍDEOS DO e_EBD -->
-<section id="videos" class="secao-videos">
-
-    <div class="container">
-
-        <div class="videos-cabecalho">
-            <h2>Conheça o aplicativo na prática</h2>
-            <p>
-                Veja os vídeos e descubra como usar o APP e-EBD.
-            
-            </p>
-        </div>
-
-        <div class="videos-grid">
-
-            <!-- VÍDEO DO SUPERINTENDENTE -->
-            <article class="video-card">
-
-                <div class="video-player">
-                    <iframe
-                        src="https://www.youtube.com/embed/N-DOMArlUpo"
-                        title="e_EBD - Painel do Superintendente"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-informacoes">
-                    <span class="video-etiqueta">VÍDEO 01</span>
-                    <h3>Painel do Superintendente</h3>
-                    <p>
-                        Conheça a administração de professores,
-                        classes, alunos, diários e relatórios.
-                    </p>
-                </div>
-
-            </article>
-
-            <!-- VÍDEO DO PROFESSOR -->
-            <article class="video-card">
-
-                <div class="video-player">
-                    <iframe
-                        src="https://www.youtube.com/embed/UMsoUEggB2U"
-                        title="e_EBD - Painel do Professor"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-informacoes">
-                    <span class="video-etiqueta">VÍDEO 02</span>
-                    <h3>Painel do Professor</h3>
-                    <p>
-                        Veja como acessar a classe, matricular
-                        alunos, realizar chamadas e preencher
-                        o diário dominical.
-                    </p>
-                </div>
-
-            </article>
-
-            <!-- VÍDEO 03 - IMPRESSÃO DO RELATÓRIO -->
-            <article class="video-card">
-
-                <div class="video-player">
-                    <iframe
-                        src="https://www.youtube.com/embed/eqdudF7NAho"
-                        title="e_EBD - Demonstração da Impressão do Relatório"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-
-                <div class="video-informacoes">
-                    <span class="video-etiqueta">VÍDEO 03</span>
-
-                    <h3>Impressão de Relatórios</h3>
-
-                    <p>
-                        Veja como gerar e imprimir os relatórios
-                        da Escola Bíblica Dominical diretamente
-                        pelo aplicativo e_EBD.
-                    </p>
-                </div>
-
-            </article>
-
-        </div>
-    </div>
-
-</section>
-  
-
-
-<section id="planos" class="secao-planos">
-
-    <div class="container">
-
-        <div class="planos-cabecalho">
-
-            <span class="planos-destaque">
-                ASSINATURA e_EBD
-            </span>
-
-            <h2>Um plano para toda a sua igreja</h2>
-
-            <p>
-                Administre sua Escola Bíblica Dominical
-                com uma assinatura anual simples,
-                acessível e organizada.
-            </p>
-
-        </div>
-
-        <div class="plano-card">
-
-            <span class="plano-etiqueta">
-                PLANO ANUAL
-            </span>
-
-            
-<!-- PROMOÇÃO BLACK FRIDAY -->
-<div class="black-friday-oferta">
-
-    <div class="black-friday-faixa">
-        BLACK FRIDAY
-    </div>
-
-    <p class="black-friday-seta">
-        ↓ OFERTA ESPECIAL DE LANÇAMENTO ↓
-    </p>
-
-    <p class="preco-antigo">
-        De <del>R$ 700,00</del> por apenas
-    </p>
-
-    <div class="plano-preco">
-        <strong>R$ 300,00</strong>
-        <span>por igreja / ano</span>
-    </div>
-
-    <div class="black-friday-desconto">
-        57% DE DESCONTO
-    </div>
-
-    <p class="black-friday-urgencia">
-        APROVEITE ANTES DE FINALIZAR O ANO!
-    </p>
-
-</div>
-
-
-            <div class="plano-beneficios">
-
-                <p>✓ Acesso a todas as funções do App e_EBD</p>
-
-            </div>
-
-            <a href="#contato" class="plano-botao">
-                Cadastrar minha igreja
-            </a>
-
-            <p class="plano-observacao">
-                Os professores não precisam contratar
-                assinaturas individuais.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="faq" class="secao-faq">
-
-    <div class="container">
-
-        <div class="faq-cabecalho">
-
-            <span class="faq-destaque">
-                TIRE SUAS DÚVIDAS
-            </span>
-
-            <h2>Perguntas Frequentes</h2>
-
-            <p>
-                Encontre respostas para as principais
-                dúvidas sobre o aplicativo e_EBD.
-            </p>
-
-        </div>
-
-        <div class="faq-lista">
-            
-
-            <details class="faq-item">
-                <summary>
-                    Uma igreja com 10 professores precisa
-                    pagar 10 assinaturas?
-                </summary>
-
-                <p>
-                    Não. A assinatura é por igreja.
-                    Todos os professores autorizados
-                    podem utilizar o aplicativo sem
-                    pagar assinaturas individuais.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>
-                    Quanto custa o aplicativo e_EBD?
-                </summary>
-
-                <p>
-                    O valor da assinatura é de
-                    R$ 300,00 por ano, por igreja.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>
-                    O professor precisa pagar para
-                    utilizar o aplicativo?
-                </summary>
-
-                <p>
-                    Não. O professor utiliza o acesso
-                    autorizado pelo superintendente
-                    da igreja.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>
-                    Posso cadastrar várias classes
-                    e alunos?
-                </summary>
-
-                <p>
-                    Sim. O e_EBD permite organizar
-                    diferentes classes, cadastrar
-                    alunos e acompanhar os registros
-                    de cada turma.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>
-                    Como funciona a ativação
-                    da assinatura?
-                </summary>
-
-                <p>
-                    O responsável realiza o cadastro
-                    da igreja. Após a confirmação
-                    do pagamento da assinatura anual,
-                    o acesso às funcionalidades
-                    é liberado.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>
-                    O superintendente consegue
-                    acompanhar todas as classes?
-                </summary>
-
-                <p>
-                    Sim. O superintendente possui
-                    acesso à visão consolidada
-                    das classes, com indicadores
-                    e relatórios da igreja.
-                </p>
-            </details>
-            <details class="faq-item">
-                <summary>Qual é a stack tecnológica do e_EBD?</summary>
-                <p>
-                O e_EBD utiliza Kotlin com Jetpack Compose no
-                aplicativo Android, Python com FastAPI no backend
-                e PostgreSQL como banco de dados.
-                A comunicação ocorre por meio de uma API REST.
-            </p>
-            </details>            
-            
-
-        </div>
-
-        <div class="faq-rodape">
-
-            <p>
-                Ainda tem alguma dúvida?
-            </p>
-
-            <a href="#contato" class="faq-botao">
-                Entre em contato
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="download" class="secao-download">
-
-    <div class="container">
-
-        <div class="download-conteudo">
-
-            <span class="download-destaque">
-                NÃO PERCA ESSA OPORTUNIDADE HOJE!
-                ORGANIZE A SUA EBD. DEUS SE AGRADA DISSO!
-            </span>
-
-            <h2>
-                "Mas tudo deve ser feito com decência e ordem".
-                <span style="color:#d4af37;">1 Coríntios 14:40</span>
-                
-            </h2>
-
-
-            <div class="download-acoes">
-
-                <span class="download-em-breve">
-                    Disponível em breve
-                </span>
-
-            </div>
-
-            <p class="download-observacao">
-                Em preparação para lançamento
-                na Google Play.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- SEÇÃO DE CONTATO -->
-<section id="contato" class="secao-contato">
-
-    <div class="container">
-
-        <h2>Entre em contato com o e_EBD</h2>
-
-        <p>
-            Preencha o formulário para receber
-            informações sobre nosso aplicativo.
-        </p>
-
-        <form id="formulario-contato" class="formulario">
-
-            <label for="nome">Nome completo</label>
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
-                required
-            >
-
-            <label for="igreja">Nome da igreja</label>
-            <input
-                type="text"
-                id="igreja"
-                name="igreja"
-                placeholder="Nome da sua igreja"
-                required
-            >
-
-            <label for="cidade">Cidade / Estado</label>
-            <input
-                type="text"
-                id="cidade"
-                name="cidade"
-                placeholder="Ex.: Parauapebas / PA"
-                required
-            >
-
-            <label for="telefone">WhatsApp</label>
-            <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="(94) 99999-9999"
-                required
-            >
-
-            <label for="email">E-mail (opcional)</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="seuemail@exemplo.com"
-            >
-
-            <label class="aceite-privacidade">
-                <input
-                    type="checkbox"
-                    id="consentimento"
-                    required
-                >
-                Concordo em fornecer meus dados
-                para receber contato sobre o e_EBD.
-            </label>
-
-            <button type="submit" class="botao-enviar">
-                Enviar meu cadastro
-            </button>
-
-            <p id="mensagem-formulario" aria-live="polite"></p>
-
-        </form>
-
-        <div class="contato-whatsapp">
-
-            <h3>Prefere conversar diretamente?</h3>
-
-            
-<a
-    href="https://wa.me/5594992026460?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20o%20e_EBD."
-    class="botao-whatsapp"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    💬 Fale comigo
-</a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-    </main>
-
-    <!-- RODAPÉ -->
-    
-<!-- RODAPÉ PROFISSIONAL -->
-<footer class="rodape-site">
-
-    <div class="container">
-
-        <div class="rodape-conteudo">
-
-            <div class="rodape-marca">
-                <h2>e_EBD</h2>
-                <p>Escola Bíblica Dominical Digital</p>
-                <p>
-                    Mantenha seus relatórios mais organizados.
-                </p>
-            </div>
-
-            <div class="rodape-links">
-                <h3>Links úteis</h3>
-
-                <a href="#inicio">Início</a>
-                <a href="#funcionalidades">Funcionalidades</a>
-                <a href="#planos">Planos</a>
-                <a href="#download">Download</a>
-                <a href="#contato">Contato</a>
-            </div>
-
-            <div class="rodape-links">
-                <h3>Informações</h3>
-
-                <a href="privacidade.html">
-                    Política de Privacidade
-                </a>
-
-                <a href="termos.html">
-                    Termos de Uso
-                </a>
-
-                <a href="#faq">
-                    Perguntas Frequentes
-                </a>
-            </div>
-
-        </div>
-
-
-<!-- REDES SOCIAIS DO RODAPÉ -->
-<div class="rodape-redes">
-
-    <h3>Siga minhas redes sociais</h3>
-
-    <p>
-        Acompanhe novos projetos.
-    </p>
-
-    <div class="redes-links">
-
-        <!-- INSTAGRAM -->
-        <a class="rede-card"
-           href="https://www.instagram.com/sergioengcomputacao/"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <span class="rede-icone instagram-icone">
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     aria-hidden="true">
-                    <rect x="2" y="2" width="20"
-                          height="20" rx="5"/>
-                    <circle cx="12" cy="12" r="4"/>
-                    <circle cx="18" cy="6" r="1"
-                            fill="currentColor"
-                            stroke="none"/>
-                </svg>
-            </span>
-
-            <span class="rede-texto">
-                <strong>Instagram</strong>
-                <small>@sergioengcomputacao</small>
-            </span>
-
-        </a>
-
-        <!-- YOUTUBE -->
-        <a class="rede-card"
-           href="https://www.youtube.com/@SERGIOENGCOMPUTA%C3%87%C3%83O"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <span class="rede-icone youtube-icone">
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     aria-hidden="true">
-                    <rect x="1" y="4" width="22"
-                          height="16" rx="5"
-                          fill="currentColor"/>
-                    <path d="M10 8 L16 12 L10 16 Z"
-                          fill="white"/>
-                </svg>
-            </span>
-
-            <span class="rede-texto">
-                <strong>YouTube</strong>
-                <small>@SERGIOENGCOMPUTAÇÃO</small>
-            </span>
-
-        </a>
-
-    </div>
-
-</div>
-
-
-        <div class="rodape-inferior">
-            <p>
-                © 2026 e_EBD.
-                Todos os direitos reservados.
-            </p>
-        </div>
-
-    </div>
-
-</footer>
-
-
-    <script src="css/js/script.js"></script>
-
-</body>
-</html>
