@@ -2107,4 +2107,106 @@ main {
     }
 }
 
+/* SEÇÃO ANTES E DEPOIS */
+
+.secao-antes-depois {
+    background: #102a43;
+    padding: 75px 20px;
+    color: #ffffff;
+}
+
+.comparativo-cabecalho {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comparativo-cabecalho span {
+    color: #d4af37;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.comparativo-cabecalho h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.comparativo-cabecalho p {
+    color: #dce5ee;
+}
+
+.comparativo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.comparativo-card {
+    background: #173f63;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    min-width: 0;
+}
+
+
+/* IMAGENS ANTES E DEPOIS - TAMANHO PADRONIZADO */
+.comparativo-card img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+    margin: 18px auto;
+}
+
+
+.comparativo-etiqueta {
+    display: inline-block;
+    padding: 9px 25px;
+    border-radius: 30px;
+    font-weight: 800;
+}
+
+.comparativo-etiqueta.antes {
+    background: #e5e7eb;
+    color: #243447;
+}
+
+.comparativo-etiqueta.depois {
+    background: #d4af37;
+    color: #102a43;
+}
+
+.comparativo-card h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.comparativo-card p {
+    color: #e4ebf2;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 600px) {
+    .secao-antes-depois {
+        padding: 50px 15px;
+    }
+
+    .comparativo-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .comparativo-card img {
+        height: auto;
+        max-height: 450px;
+        object-fit: contain;
+    }
+}
+
 
