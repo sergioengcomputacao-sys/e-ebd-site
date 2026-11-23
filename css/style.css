@@ -2209,4 +2209,41 @@ main {
     }
 }
 
+/* CORREÇÃO DO ANTES E DEPOIS NO CELULAR */
+@media (max-width: 600px) {
+
+    .secao-antes-depois {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 40px 15px;
+    }
+
+    .comparativo-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .comparativo-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .comparativo-card img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+        margin: 15px auto;
+    }
+}
+
+
 
