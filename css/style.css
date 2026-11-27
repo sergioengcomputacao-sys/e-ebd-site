@@ -1951,3 +1951,26 @@ main {
         margin-top: 0;
     }
 }
+/* AVISO DE PUBLICAÇÃO NA PLAY STORE */
+
+.aviso-play-store {
+    background-color: #d4af37;
+    color: #102a43;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.aviso-play-store a {
+    color: #102a43;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .aviso-play-store {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+}
