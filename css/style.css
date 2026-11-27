@@ -1,3 +1,4 @@
+/* e_EBD — CSS refatorado | ordem de cascata preservada */
 
 /* CONFIGURAÇÕES GERAIS */
 
@@ -14,8 +15,6 @@ body {
     line-height: 1.6;
 }
 
-/* CABEÇALHO */
-
 header {
     background-color: #102a43;
     color: white;
@@ -28,10 +27,8 @@ header h1 {
     font-size: 36px;
 }
 
-/* CONTEÚDO */
-
 section {
-     margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 section h2 {
@@ -43,8 +40,6 @@ section p {
     margin-bottom: 25px;
 }
 
-/* BOTÃO */
-
 section a {
     display: inline-block;
     background-color: #d4af37;
@@ -55,8 +50,6 @@ section a {
     font-weight: bold;
 }
 
-/* RODAPÉ */
-
 footer {
     background-color: #102a43;
     color: white;
@@ -64,9 +57,7 @@ footer {
     padding: 20px;
 }
 
-/* ====================================
-   AULA 2 - CABEÇALHO PROFISSIONAL
-==================================== */
+/* CABEÇALHO E NAVEGAÇÃO */
 
 .container {
     width: 90%;
@@ -117,24 +108,7 @@ footer {
     color: #d4af37;
 }
 
-.botao-cabecalho {
-    background-color: #d4af37;
-    color: #102a43;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.botao-cabecalho:hover {
-    background-color: #f1c94b;
-}
-
-/* ADAPTAÇÃO PARA CELULARES */
-
 @media (max-width: 900px) {
-
     .cabecalho-conteudo {
         flex-direction: column;
         text-align: center;
@@ -149,12 +123,9 @@ footer {
         flex-wrap: wrap;
         gap: 15px;
     }
-
 }
 
-/* ====================================
-   AULA 3 - FORMULÁRIO E CONTATO
-==================================== */
+/* FORMULÁRIO E CONTATO */
 
 .secao-contato {
     background-color: #f5f7fb;
@@ -168,11 +139,9 @@ footer {
     padding: 35px;
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     text-align: left;
 }
 
@@ -262,17 +231,13 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     background-color: #25d366;
     color: #ffffff;
-
     padding: 12px 20px;
     border-radius: 8px;
-
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
-
     transition: background-color 0.3s;
 }
 
@@ -281,112 +246,22 @@ footer {
 }
 
 @media (max-width: 600px) {
-
     .botoes-cabecalho {
         flex-wrap: wrap;
     }
 
-    .botao-whatsapp-topo,
-    .botao-cabecalho {
+    .botao-whatsapp-topo {
         text-align: center;
     }
-
 }
 
-/* ====================================
-   FUNCIONALIDADES DO e_EBD
-==================================== */
+/* NAVEGAÇÃO SUAVE */
 
 html {
     scroll-behavior: smooth;
 }
 
-.secao-funcionalidades {
-    background-color: #ffffff;
-    padding: 90px 20px;
-    scroll-margin-top: 20px;
-}
-
-.secao-funcionalidades h2 {
-    color: #102a43;
-    font-size: 34px;
-    margin-bottom: 15px;
-}
-
-.descricao-funcionalidades {
-    color: #526477;
-    font-size: 17px;
-    margin-bottom: 45px;
-}
-
-.cards-funcionalidades {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.card-funcionalidade {
-    background-color: #f5f7fb;
-    border: 1px solid #e1e7ee;
-    border-radius: 15px;
-    padding: 35px 25px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card-funcionalidade:hover {
-    transform: translateY(-5px);
-}
-
-.icone-funcionalidade {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.card-funcionalidade h3 {
-    color: #102a43;
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-
-.card-funcionalidade p {
-    color: #526477;
-    font-size: 15px;
-}
-
-.acao-funcionalidades {
-    margin-top: 40px;
-}
-
-.botao-conhecer {
-    display: inline-block;
-    background-color: #d4af37;
-    color: #102a43;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.botao-conhecer:hover {
-    background-color: #f1c94b;
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 700px) {
-
-    .cards-funcionalidades {
-        grid-template-columns: 1fr;
-    }
-
-    .secao-funcionalidades h2 {
-        font-size: 27px;
-    }
-
-}
+/* APRESENTAÇÃO PRINCIPAL */
 
 .hero {
     background: linear-gradient(
@@ -394,7 +269,6 @@ html {
         #102a43,
         #173f63
     );
-
     color: #ffffff;
     padding: 100px 20px;
 }
@@ -419,13 +293,6 @@ html {
     margin-bottom: 20px;
 }
 
-.hero-texto h2 {
-    color: #ffffff;
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
 .hero-texto p {
     color: #dce6f0;
     font-size: 17px;
@@ -439,7 +306,6 @@ html {
     margin-bottom: 25px;
 }
 
-.hero-botao-principal,
 .hero-botao-secundario {
     display: inline-block;
     padding: 15px 24px;
@@ -447,18 +313,6 @@ html {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-}
-
-.hero-botao-principal {
-    background-color: #d4af37;
-    color: #102a43;
-}
-
-.hero-botao-principal:hover {
-    background-color: #f1c94b;
-}
-
-.hero-botao-secundario {
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #d4af37;
@@ -480,25 +334,18 @@ html {
     justify-content: center;
 }
 
-
 .hero-imagem img {
     width: 100%;
     max-width: 520px;
     height: auto;
-
     background: transparent;
     border: none;
     border-radius: 0;
     box-shadow: none;
-
     object-fit: contain;
 }
 
-
-/* RESPONSIVIDADE */
-
 @media (max-width: 900px) {
-
     .hero {
         padding: 65px 20px;
     }
@@ -512,143 +359,19 @@ html {
         text-align: center;
     }
 
-    .hero-texto h2 {
-        font-size: 32px;
-    }
-
     .hero-botoes {
         justify-content: center;
     }
-
 }
 
 @media (max-width: 480px) {
-
-    .hero-texto h2 {
-        font-size: 27px;
-    }
-
-    .hero-botao-principal,
     .hero-botao-secundario {
         width: 100%;
         text-align: center;
     }
-
 }
 
-.secao-beneficios {
-    background: linear-gradient(
-        135deg,
-        #102a43,
-        #173f63
-    );
-
-    padding: 90px 20px;
-    scroll-margin-top: 20px;
-}
-
-.beneficios-cabecalho {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 45px;
-}
-
-.beneficios-destaque {
-    display: block;
-    color: #d4af37;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
-}
-
-.beneficios-cabecalho h2 {
-    color: #ffffff;
-    font-size: 23px;
-    line-height: 1.3;
-    margin-bottom: 20px;
-}
-
-.beneficios-cabecalho p {
-    color: #dce6f0;
-    font-size: 17px;
-}
-
-.beneficios-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.beneficio-card {
-    background-color: #173f63;
-    border: 1px solid rgba(212, 175, 55, 0.25);
-    border-radius: 15px;
-    padding: 35px 25px;
-    text-align: center;
-
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
-}
-
-.beneficio-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.beneficio-icone {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.beneficio-card h3 {
-    color: #d4af37;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.beneficio-card p {
-    color: #dce6f0;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-/* TABLETS */
-
-@media (max-width: 900px) {
-
-    .beneficios-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-/* CELULARES */
-
-@media (max-width: 600px) {
-
-    .secao-beneficios {
-        padding: 65px 20px;
-    }
-
-    .beneficios-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .beneficios-cabecalho h2 {
-        font-size: 27px;
-    }
-
-    .beneficio-card {
-        padding: 30px 20px;
-    }
-
-}
-
-/* SEÇÃO PRINCIPAL */
+/* GALERIA */
 
 .secao-galeria {
     background-color: #f5f7fb;
@@ -669,17 +392,9 @@ html {
     margin-bottom: 15px;
 }
 
-.galeria-cabecalho h2 {
-    color: #102a43;
-    font-size: 34px;
-    margin-bottom: 15px;
-}
-
 .galeria-cabecalho p {
     color: #526477;
 }
-
-/* ORGANIZAÇÃO DAS IMAGENS */
 
 .galeria-grid {
     display: grid;
@@ -722,13 +437,10 @@ html {
     position: fixed;
     inset: 0;
     z-index: 9999;
-
     background-color: rgba(0, 0, 0, 0.9);
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 50px 20px;
 }
 
@@ -746,29 +458,20 @@ html {
     position: absolute;
     top: 15px;
     right: 25px;
-
     background: transparent;
     border: none;
     color: #ffffff;
-
     font-size: 42px;
     cursor: pointer;
 }
 
-/* RESPONSIVIDADE PARA TABLETS */
-
 @media (max-width: 1000px) {
-
     .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-/* RESPONSIVIDADE PARA CELULARES */
-
 @media (max-width: 600px) {
-
     .galeria-grid {
         grid-template-columns: 1fr;
     }
@@ -776,12 +479,9 @@ html {
     .imagem-galeria {
         height: 350px;
     }
-
-    .galeria-cabecalho h2 {
-        font-size: 27px;
-    }
-
 }
+
+/* VÍDEOS */
 
 .secao-videos {
     background: linear-gradient(
@@ -789,7 +489,6 @@ html {
         #102a43,
         #173f63
     );
-
     padding: 90px 20px;
     scroll-margin-top: 20px;
 }
@@ -798,15 +497,6 @@ html {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 50px;
-}
-
-.videos-destaque {
-    display: block;
-    color: #d4af37;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-bottom: 15px;
 }
 
 .videos-cabecalho h2 {
@@ -873,10 +563,7 @@ html {
     line-height: 1.7;
 }
 
-/* RESPONSIVIDADE */
-
 @media (max-width: 800px) {
-
     .videos-grid {
         grid-template-columns: 1fr;
     }
@@ -888,10 +575,7 @@ html {
     .video-informacoes {
         padding: 22px;
     }
-
 }
-
-/* REPRODUÇÃO DOS VÍDEOS LOCAIS */
 
 .video-player video {
     position: absolute;
@@ -903,6 +587,7 @@ html {
     border: none;
 }
 
+/* PLANOS */
 
 .secao-planos {
     padding: 90px 20px;
@@ -955,12 +640,6 @@ html {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
-}
-
-.plano-card h3 {
-    font-size: 26px;
-    margin: 22px 0;
-    color: white;
 }
 
 .plano-preco {
@@ -1026,11 +705,9 @@ html {
     .plano-card {
         padding: 32px 22px;
     }
-
-    .plano-card h3 {
-        font-size: 23px;
-    }
 }
+
+/* PERGUNTAS FREQUENTES */
 
 .secao-faq {
     padding: 80px 20px;
@@ -1153,10 +830,7 @@ html {
     background-color: #f1c94b;
 }
 
-/* RESPONSIVIDADE */
-
 @media (max-width: 600px) {
-
     .secao-faq {
         padding: 60px 16px;
     }
@@ -1174,8 +848,9 @@ html {
         padding: 0 18px 18px;
         font-size: 14px;
     }
-
 }
+
+/* DOWNLOAD */
 
 .secao-download {
     padding: 85px 20px;
@@ -1238,7 +913,6 @@ html {
 }
 
 @media (max-width: 600px) {
-
     .secao-download {
         padding: 60px 16px;
     }
@@ -1250,8 +924,9 @@ html {
     .download-conteudo > p {
         font-size: 15px;
     }
-
 }
+
+/* PÁGINAS LEGAIS */
 
 .pagina-legal-topo {
     display: flex;
@@ -1316,7 +991,6 @@ html {
 }
 
 @media (max-width: 600px) {
-
     .pagina-legal-topo {
         flex-direction: column;
         text-align: center;
@@ -1341,13 +1015,13 @@ html {
     .legal-conteudo p {
         font-size: 15px;
     }
-
 }
 
 main {
     background-color: #102a43;
 }
 
+/* RODAPÉ */
 
 .rodape-site {
     background-color: #102a43;
@@ -1412,10 +1086,7 @@ main {
     margin: 0;
 }
 
-/* RESPONSIVIDADE */
-
 @media (max-width: 700px) {
-
     .rodape-conteudo {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1424,18 +1095,15 @@ main {
     .rodape-site {
         padding: 45px 20px 20px;
     }
-
 }
 
+/* MENU MOBILE */
 
-/* Esconde o botão hambúrguer no computador */
 .botao-menu-mobile {
     display: none;
 }
 
-/* Configuração para celulares */
 @media (max-width: 600px) {
-
     .cabecalho {
         padding: 15px 0;
     }
@@ -1459,38 +1127,31 @@ main {
         font-size: 10px;
     }
 
-    /* Botão hambúrguer */
     .botao-menu-mobile {
         display: flex;
         align-items: center;
         justify-content: center;
-
         width: 46px;
         height: 46px;
-
         background: transparent;
         border: 1px solid #d4af37;
         border-radius: 8px;
-
         color: #ffffff;
         font-size: 27px;
         cursor: pointer;
     }
 
-    /* Menu fechado inicialmente */
     .cabecalho .menu {
         display: none;
         grid-column: 1 / -1;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-
         width: 100%;
         padding: 10px 0;
         border-top: 1px solid #36516a;
     }
 
-    /* Menu aberto */
     .cabecalho .menu.menu-aberto {
         display: flex;
     }
@@ -1506,7 +1167,6 @@ main {
         background-color: #173f63;
     }
 
-    /* Botões comerciais */
     .botoes-cabecalho {
         grid-column: 1 / -1;
         display: flex;
@@ -1515,197 +1175,116 @@ main {
         gap: 10px;
     }
 
-    .botao-cabecalho,
     .botao-whatsapp-topo {
         padding: 11px 14px;
         font-size: 13px;
     }
-}
-@media (max-width: 600px) {
 
-    /* Botões da apresentação principal */
-    .hero-botao-principal,
     .hero-botao-secundario {
         display: flex;
         align-items: center;
         justify-content: center;
-
         width: 100%;
         min-height: 48px;
         padding: 12px 16px;
-
         font-size: 14px;
         line-height: 1.4;
         text-align: center;
         border-radius: 10px;
     }
 
-    /* Espaçamento entre os botões principais */
     .hero-botoes {
         gap: 12px;
     }
 
-    /* Botões comerciais do cabeçalho */
-    .cabecalho .botao-cabecalho,
     .cabecalho .botao-whatsapp-topo {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-
         min-height: 44px;
         padding: 10px 12px;
-
         font-size: 13px;
         line-height: 1.3;
         border-radius: 9px;
         text-align: center;
     }
 
-    /* Botões das demais seções */
-    .botao-conhecer,
-    .plano-botao,
-    .secao-faq .faq-botao,
-    .botao-enviar,
-    .botao-whatsapp {
+    .plano-botao, .secao-faq .faq-botao, .botao-enviar, .botao-whatsapp {
         min-height: 48px;
         padding: 12px 18px;
-
         font-size: 14px;
         line-height: 1.4;
         border-radius: 10px;
         text-align: center;
     }
 
-    /* Evita que botões largos ultrapassem a tela */
-    .botao-conhecer,
-    .secao-faq .faq-botao,
-    .botao-whatsapp {
+    .secao-faq .faq-botao, .botao-whatsapp {
         max-width: 100%;
     }
-}
 
-@media (max-width: 600px) {
-
-    /* Espaçamento lateral do cabeçalho */
     .cabecalho .cabecalho-conteudo {
         width: calc(100% - 40px);
         max-width: 100%;
         margin: 0 auto;
     }
 
-    /* Espaçamento interno da apresentação */
     .hero {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    /* Limita a largura do conteúdo principal */
     .hero .hero-conteudo {
         width: 100%;
         max-width: 100%;
     }
 
-    /* Mantém os botões dentro da área disponível */
     .hero-botoes {
         width: 100%;
     }
-}
-@media (max-width: 600px) {
 
-    /* Espaçamento da seção */
-    .secao-beneficios {
-        padding: 55px 20px;
-    }
-
-    /* Espaçamento entre os cartões */
-    .beneficios-grid {
-        gap: 16px;
-    }
-
-    /* Cartões mais compactos */
-    .beneficio-card {
-        padding: 24px 20px;
-        border-radius: 12px;
-    }
-
-    /* Ícones proporcionais */
-    .beneficio-icone {
-        font-size: 34px;
-        margin-bottom: 12px;
-    }
-
-    /* Títulos dos cartões */
-    .beneficio-card h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    /* Descrições */
-    .beneficio-card p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 0;
-    }
-
-    /* Título da seção */
-    .beneficios-cabecalho {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-
-    /* Espaçamento da seção */
     .secao-galeria {
         padding: 55px 20px;
     }
 
-    /* Organização das imagens */
     .galeria-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    /* Cartões das imagens */
     .galeria-item {
         padding: 18px;
         border-radius: 14px;
         overflow: hidden;
     }
 
-    /* Capturas de tela */
     .imagem-galeria {
         display: block;
         width: 100%;
         height: 380px;
         object-fit: contain;
         object-position: center;
-
         background-color: #eef2f6;
         border-radius: 10px;
     }
 
-    /* Legendas */
     .galeria-item figcaption {
         font-size: 15px;
         margin-top: 14px;
         text-align: center;
     }
 
-    /* Título da seção */
     .galeria-cabecalho {
         margin-bottom: 30px;
     }
 }
 
-/* Celulares muito pequenos */
 @media (max-width: 360px) {
-
     .imagem-galeria {
         height: 320px;
     }
 }
-/* VERSÍCULO BÍBLICO - HERO */
+
+/* VERSÍCULO */
 
 .versiculo-hero {
     max-width: 750px;
@@ -1715,7 +1294,7 @@ main {
 
 .versiculo-hero p {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 30px;
     font-style: italic;
     line-height: 1.7;
     margin-bottom: 12px;
@@ -1727,10 +1306,7 @@ main {
     font-weight: 700;
 }
 
-/* VERSÃO PARA CELULARES */
-
 @media (max-width: 600px) {
-
     .versiculo-hero {
         margin-bottom: 30px;
         padding: 0 10px;
@@ -1744,9 +1320,7 @@ main {
     .versiculo-hero span {
         font-size: 14px;
     }
-
 }
-/* REPRODUTORES YOUTUBE - e_EBD */
 
 .video-player {
     width: 100%;
@@ -1763,7 +1337,7 @@ main {
     border: none;
 }
 
-/* BLACK FRIDAY - e_EBD */
+/* BLACK FRIDAY */
 
 .black-friday-oferta {
     text-align: center;
@@ -1820,10 +1394,7 @@ main {
     line-height: 1.5;
 }
 
-/* CORREÇÃO DO CABEÇALHO PARA NOTEBOOKS */
-
 @media (min-width: 901px) and (max-width: 1400px) {
-
     .cabecalho-conteudo {
         flex-wrap: wrap;
         justify-content: center;
@@ -1846,8 +1417,7 @@ main {
     }
 }
 
-
-/* REDES SOCIAIS - RODAPÉ PROFISSIONAL */
+/* REDES SOCIAIS */
 
 .rodape-redes {
     padding: 55px 20px;
@@ -1867,8 +1437,6 @@ main {
     margin-bottom: 35px;
 }
 
-/* CARTÕES MAIS SEPARADOS */
-
 .redes-links {
     display: flex;
     justify-content: center;
@@ -1876,26 +1444,20 @@ main {
     gap: 35px;
 }
 
-/* CARTÃO INDIVIDUAL */
-
 .redes-links .rede-card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-
     width: 280px;
     max-width: 100%;
     min-height: 100px;
     padding: 22px;
-
     background-color: #173f63;
     border: 1px solid #36516a;
     border-radius: 16px;
-
     text-decoration: none;
     text-align: left;
-
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     transition: transform 0.3s ease,
                 border-color 0.3s ease,
@@ -1908,14 +1470,11 @@ main {
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-/* ÍCONES */
-
 .rede-icone {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-
     width: 28px;
     height: 28px;
     border-radius: 14px;
@@ -1940,8 +1499,6 @@ main {
     background-color: #ff0000;
 }
 
-/* NOME E ENDEREÇO */
-
 .rede-texto {
     display: flex;
     flex-direction: column;
@@ -1960,10 +1517,7 @@ main {
     overflow-wrap: anywhere;
 }
 
-/* ADAPTAÇÃO PARA CELULARES */
-
 @media (max-width: 600px) {
-
     .rodape-redes {
         padding: 40px 10px;
     }
@@ -1985,14 +1539,13 @@ main {
     }
 }
 
-/* CAPA EXCLUSIVA PARA CELULARES */
+/* CAPA MOBILE */
 
 .capa-mobile {
     display: none;
 }
 
 @media (max-width: 600px) {
-
     .capa-mobile {
         display: flex;
         align-items: center;
@@ -2011,18 +1564,6 @@ main {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
-    }
-
-    .capa-mobile h2 {
-        color: #ffffff;
-        font-size: 29px;
-        line-height: 1.3;
-        margin-bottom: 25px;
-    }
-
-    .capa-mobile h2 span {
-        display: block;
-        color: #d4af37;
     }
 
     .capa-mobile img {
@@ -2046,10 +1587,7 @@ main {
     }
 }
 
-/* IMAGEM PRINCIPAL DO DESKTOP */
-
 @media (min-width: 601px) {
-
     .hero-imagem {
         display: flex;
         align-items: center;
@@ -2064,19 +1602,13 @@ main {
     }
 }
 
-/* EVITAR IMAGEM DUPLICADA NO CELULAR */
-
 @media (max-width: 600px) {
-
     .hero-imagem {
         display: none;
     }
 }
 
-/* IMAGEM DO MENINO NO DESKTOP */
-
 @media (min-width: 901px) {
-
     .hero-conteudo {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
@@ -2099,15 +1631,13 @@ main {
     }
 }
 
-/* NO CELULAR, MANTER SOMENTE A CAPA MOBILE */
-
 @media (max-width: 600px) {
     .hero-imagem {
         display: none;
     }
 }
 
-/* SEÇÃO ANTES E DEPOIS */
+/* ANTES E DEPOIS */
 
 .secao-antes-depois {
     background: #102a43;
@@ -2151,8 +1681,6 @@ main {
     min-width: 0;
 }
 
-
-/* IMAGENS ANTES E DEPOIS - TAMANHO PADRONIZADO */
 .comparativo-card img {
     width: 100%;
     max-width: 350px;
@@ -2163,7 +1691,6 @@ main {
     display: block;
     margin: 18px auto;
 }
-
 
 .comparativo-etiqueta {
     display: inline-block;
@@ -2191,7 +1718,6 @@ main {
     color: #e4ebf2;
 }
 
-/* ADAPTAÇÃO PARA CELULARES */
 @media (max-width: 600px) {
     .secao-antes-depois {
         padding: 50px 15px;
@@ -2207,10 +1733,6 @@ main {
         max-height: 450px;
         object-fit: contain;
     }
-}
-
-/* CORREÇÃO DO ANTES E DEPOIS NO CELULAR */
-@media (max-width: 600px) {
 
     .secao-antes-depois {
         width: 100%;
@@ -2245,7 +1767,6 @@ main {
     }
 }
 
-/* REPRODUÇÃO DE VÍDEOS MP4 */
 .video-player video {
     display: block;
     width: 100%;
@@ -2256,7 +1777,8 @@ main {
     background: #000000;
 }
 
-/* APRESENTAÇÃO DO E_EBD */
+/* PÁGINA SOBRE */
+
 .apresentacao-ebd {
     width: 100%;
     max-width: 1000px;
@@ -2265,7 +1787,6 @@ main {
     box-sizing: border-box;
 }
 
-/* TÍTULO DA APRESENTAÇÃO */
 .apresentacao-ebd h2 {
     color: #fb0909;
     font-size: 36px;
@@ -2275,7 +1796,6 @@ main {
     white-space: nowrap;
 }
 
-/* TEXTO DA APRESENTAÇÃO */
 .apresentacao-ebd p {
     color: #f8f5f5;
     text-align: justify;
@@ -2284,9 +1804,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* ADAPTAÇÃO PARA CELULARES */
 @media (max-width: 600px) {
-
     .apresentacao-ebd {
         padding: 25px 15px;
     }
@@ -2301,5 +1819,151 @@ main {
     }
 }
 
+/* ESTILOS DA PÁGINA SOBRE */
 
+.pagina-sobre {
+    background: #102a43;
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+}
 
+.pagina-sobre .sobre-frase {
+    color: #d4af37;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pagina-sobre .sobre-impacto {
+    color: #d4af37;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobre-navegacao {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sobre-voltar {
+    display: inline-block;
+    background: #d4af37;
+    color: #000000;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.sobre-voltar:hover {
+    background: #e6c65a;
+}
+
+/* SLOGAN */
+
+.slogan-principal {
+    display: block;
+    width: 100%;
+    background: #102a43;
+    padding: 45px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slogan-principal h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(25px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.slogan-principios {
+    display: block;
+    color: #ffffff;
+}
+
+.slogan-inovacao {
+    display: block;
+    color: #d4af37;
+    margin-top: 8px;
+}
+
+.slogan-linha {
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    margin: 22px auto 0;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+    .slogan-principal {
+        padding: 30px 15px;
+    }
+
+    .slogan-principal h1 {
+        font-size: 28px;
+        letter-spacing: 0;
+        line-height: 1.4;
+    }
+
+    .slogan-linha {
+        width: 60px;
+    }
+
+    .botao-menu-mobile {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #d4af37;
+        font-size: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+/* VERSÍCULO ABAIXO DO MENU MOBILE */
+
+.versiculo-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .versiculo-mobile {
+        display: block;
+        background-color: #102a43;
+        padding: 20px 25px;
+        text-align: center;
+    }
+
+    .versiculo-mobile p {
+        color: #ffffff;
+        font-family: Georgia, serif;
+        font-size: 17px;
+        font-style: italic;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .versiculo-mobile span {
+        display: block;
+        color: #d4af37;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Evita duplicidade do versículo */
+    .versiculo-hero {
+        display: none;
+    }
+}
